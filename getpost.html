@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Api ICE-CREAM</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      background-color: rgb(77, 22, 129);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    }
+
+    div {
+      display: flex;
+      margin: auto;
+      margin-top: 100px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: rgb(228, 182, 228);
+    }
+
+    h2 {
+      color: burlywood;
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <!-- ! GET FORM -->
+    <h1>ICE CREAM PARLOUR - {stateless rest api}</h1>
+    <div>
+      <h2>Get Form</h2>
+      <form action="http://localhost:3000/tacos" method="get">
+        <input type="text" name="icecream" />
+        <input type="number" name="qty" />
+        <input type="number" name="price" />
+        <input type="submit" />
+      </form>
+
+      <!--! POST FORM -->
+      <h2>Post Form</h2>
+      <form action="http://localhost:3000/tacos" method="post">
+        <input type="text" name="icecream" />
+        <input type="number" name="qty" />
+        <input type="number" name="price" />
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
